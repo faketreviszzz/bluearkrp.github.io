@@ -1,112 +1,31 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlueArk Roleplay</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #121212;
-            color: #ffffff;
-        }
-
-        header {
-            background-color: #1a1a1a;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #00aaff;
-        }
-
-        header h1 {
-            margin: 0;
-            color: #00aaff;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #1a1a1a;
-            border-bottom: 1px solid #333;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 15px 25px;
-            transition: background 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #00aaff;
-            color: #121212;
-        }
-
-        main {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .buttons a {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 30px;
-            background-color: #00aaff;
-            color: #121212;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .buttons a:hover {
-            background-color: #0088cc;
-        }
-
-        footer {
-            background-color: #1a1a1a;
-            color: #777;
-            text-align: center;
-            padding: 20px;
-            border-top: 1px solid #333;
-            margin-top: 40px;
-        }
-    </style>
+<link rel="stylesheet" href="style.css">
+<title>BlueArk Roleplay</title>
 </head>
+
 <body>
-    <header>
-        <h1>BlueArk Roleplay</h1>
-    </header>
 
-    <nav>
-        <a href="#home">Főoldal</a>
-        <a href="#csatlakozas">Csatlakozás</a>
-        <a href="#vezetoseg">Vezetőség</a>
-    </nav>
+<nav>
+<a href="index.html">Főoldal</a>
+<a href="rules.html">Szabályzat</a>
+<a href="apply.html">Jelentkezés</a>
+<a href="factions.html">Frakciók</a>
+<a href="login.html">Login</a>
+</nav>
 
-    <main>
-        <section id="home">
-            <h2>Üdvözlünk a BlueArk Roleplay-en!</h2>
-            <p>Csatlakozz a közösségünkhöz és éld át az igazi FiveM Roleplay élményt!</p>
-        </section>
+<div class="hero">
+<video autoplay muted loop>
+<source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+</video>
 
-        <section id="csatlakozas">
-            <h2>Csatlakozás</h2>
-            <div class="buttons">
-                <a href="https://discord.gg/ide-irasd-a-discord-linked" target="_blank">Csatlakozz a Discordhoz</a>
-                <a href="fivem://connect/szerver-ip:port" target="_blank">Csatlakozz a FiveM szerverhez</a>
-            </div>
-        </section>
+<div class="hero-box">
+<h1>BlueArk Roleplay</h1>
+<p>Serious FiveM Roleplay</p>
+<a class="btn" href="fivem://connect/IDE_AZ_IP">CSATLAKOZZ</a>
+</div>
+</div>
 
-        <section id="vezetoseg">
-            <h2>Vezetőség</h2>
-            <p>Itt található majd a vezetőség információja. (Később töltsd fel a tartalmat.)</p>
-        </section>
-    </main>
-
-    <footer>
-        &copy; 2026 BlueArk Roleplay. Minden jog fenntartva.
-    </footer>
 </body>
 </html>
