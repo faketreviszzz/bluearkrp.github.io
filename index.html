@@ -1,164 +1,112 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BlueArk Roleplay</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueArk Roleplay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00aaff;
+        }
 
-* {
-    box-sizing: border-box;
-}
+        header h1 {
+            margin: 0;
+            color: #00aaff;
+        }
 
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #0a0c12;
-    color: #e6e6e6;
-}
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1a1a1a;
+            border-bottom: 1px solid #333;
+        }
 
-/* HERO RÉSZ - FŐ FEJLÉC */
-.hero {
-    height: 90vh;
-    background: linear-gradient(rgba(10,12,18,0.8), rgba(10,12,18,0.9)),
-    url('https://images.unsplash.com/photo-1605902711622-cfb43c4432f1?auto=format&fit=crop&w=1600&q=80');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 25px;
+            transition: background 0.3s;
+        }
 
-.hero h1 {
-    font-size: 64px;
-    margin: 0;
-    letter-spacing: 2px;
-}
+        nav a:hover {
+            background-color: #00aaff;
+            color: #121212;
+        }
 
-.hero p {
-    max-width: 700px;
-    margin: 20px auto;
-    font-size: 18px;
-    color: #cfd3ff;
-}
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-/* GOMBOK */
-.btn {
-    display: inline-block;
-    padding: 14px 28px;
-    margin: 10px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-}
+        .buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #00aaff;
+            color: #121212;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
 
-.primary {
-    background: #1a73e8;
-    color: white;
-}
+        .buttons a:hover {
+            background-color: #0088cc;
+        }
 
-.secondary {
-    background: transparent;
-    color: white;
-    border: 2px solid #1a73e8;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-}
-
-/* SZEKCIÓK */
-.section {
-    max-width: 1100px;
-    margin: 80px auto;
-    padding: 0 20px;
-}
-
-.section h2 {
-    text-align: center;
-    font-size: 32px;
-}
-
-/* KÁRTYÁK */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
-}
-
-.card {
-    background: #11141c;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 30px;
-    background: #07090f;
-    color: #aaa;
-}
-</style>
+        footer {
+            background-color: #1a1a1a;
+            color: #777;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <h1>BlueArk Roleplay</h1>
+    </header>
 
-<div class="hero">
-    <h1>BlueArk Roleplay</h1>
-    <p>
-    Egy valósághű, közösségközpontú FiveM szerepjáték szerver, ahol minden döntésed számít.
-    Csatlakozz, építs karaktert, szerepjátssz és légy része BlueArk világának.
-    </p>
+    <nav>
+        <a href="#home">Főoldal</a>
+        <a href="#csatlakozas">Csatlakozás</a>
+        <a href="#vezetoseg">Vezetőség</a>
+    </nav>
 
-    <a href="https://discord.gg/IDE_TEDD_A_TIED" class="btn primary">Csatlakozás Discordhoz</a>
-    <a href="#info" class="btn secondary">Tudj meg többet</a>
-</div>
+    <main>
+        <section id="home">
+            <h2>Üdvözlünk a BlueArk Roleplay-en!</h2>
+            <p>Csatlakozz a közösségünkhöz és éld át az igazi FiveM Roleplay élményt!</p>
+        </section>
 
-<div class="section" id="info">
-<h2>Miért BlueArk?</h2>
+        <section id="csatlakozas">
+            <h2>Csatlakozás</h2>
+            <div class="buttons">
+                <a href="https://discord.gg/ide-irasd-a-discord-linked" target="_blank">Csatlakozz a Discordhoz</a>
+                <a href="fivem://connect/szerver-ip:port" target="_blank">Csatlakozz a FiveM szerverhez</a>
+            </div>
+        </section>
 
-<div class="grid">
-<div class="card">
-<h3>🎭 Komoly RP</h3>
-<p>Szabályozott, minőségi szerepjáték tapasztalt staffal.</p>
-</div>
+        <section id="vezetoseg">
+            <h2>Vezetőség</h2>
+            <p>Itt található majd a vezetőség információja. (Később töltsd fel a tartalmat.)</p>
+        </section>
+    </main>
 
-<div class="card">
-<h3>👥 Aktív közösség</h3>
-<p>Barátságos játékosok, rendszeres események és programok.</p>
-</div>
-
-<div class="card">
-<h3>🚓 Frakciók</h3>
-<p>Rendőrség, EMS, szerelők, illegális szervezetek és civilek.</p>
-</div>
-
-<div class="card">
-<h3>⚙️ Stabil szerver</h3>
-<p>Optimalizált scriptelés és folyamatos fejlesztés.</p>
-</div>
-</div>
-</div>
-
-<div class="section">
-<h2>Csatlakozás</h2>
-<p style="text-align:center;">
-FiveM parancs:<br>
-<strong>connect IDE_TEDD_A_SZERVER_IP</strong>
-</p>
-</div>
-
-<footer>
-© 2026 BlueArk Roleplay — Community First
-</footer>
-
+    <footer>
+        &copy; 2026 BlueArk Roleplay. Minden jog fenntartva.
+    </footer>
 </body>
 </html>
